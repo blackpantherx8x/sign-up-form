@@ -1,3 +1,28 @@
-h1 {
-    color:aquamarine
-}
+body {
+    font-family: "Manrope";
+    margin: 0; /* Add this line to remove body margin */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+  }
+  
+  .img {
+    display: flex;
+    width: 30%;
+    height: 100vh; /* Set the height to 100vh to match the body height */
+    background: url(./purple.jpg) no-repeat center;
+    background-size: cover;
+    justify-content: start;
+  }
+  
+  .img-desc {
+    width: 100%;
+    margin-top: auto;
+    font-size: 60%;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value as needed */
+  }
