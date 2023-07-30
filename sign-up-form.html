@@ -1,23 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up Form TOP</title>
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up Form</title>
+    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
     <div class="img">
-        <div class="img-desc"> 
-            <p class="img-info">Photo by Chen Mizrachi</p>
-            <a href="https://unsplash.com/de/fotos/ragxaRZaJMA">
-                <p class="img-info">https://unsplash.com/de/fotos/ragxaRZaJMA</p>
-            </a>
-        </div>
+      <div class="img-logo">
+        <img src="/logo.png" alt="logo" class="logo-img" />
+      </div>
+      <div class="img-description">
+        <p class="img-info">Photo by <a href="https://unsplash.com/de/@chenhanozel" class="img-link">Chen Mizrach</a> on <a href="https://unsplash.com/de/fotos/ragxaRZaJMA" class="img-link">Unsplash</a></p>
+      </div>
+      
     </div>
-</body>
+    <div class="form">
+      <div class="form-info">
+        <h1>
+          This is not a real online service! You know you need somthing <br> like
+          this in your life to help you realize your deepest dreams. <br>Sign up
+          <i>now</i> to get started. <br/> <br>
+          You <i>know</i> you want to.
+
+        </h1>
+      </div>
+      <form action="">
+        <h1>Let's do this!</h1>
+        <div class="inputs">
+          <div class="first-name">
+            <label for="first-name" class="form-label">First Name:</label>
+            <input
+              required
+              type="text"
+              class="form-input"
+              id="first-name"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="last-name">
+            <label for="last-name" class="form-label">Last Name:</label>
+            <input
+              required
+              type="text"
+              class="form-input"
+              id="last-name"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div class="inputs">
+          <div class="email">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              required
+              type="email"
+              class="form-input"
+              id="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="phone">
+            <label for="phone" class="form-label">Phone:</label>
+            <input
+              required
+              type="text"
+              class="form-input"
+              id="phone"
+              placeholder="Phone"
+            />
+          </div>
+        </div>
+        <div class="inputs">
+          <div class="password">
+            <label for="password" class="form-label">Password:</label>
+            <input
+              required
+              type="text"
+              class="form-input"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="confirm-password">
+            <label for="confirm-password" class="form-label">Confirm Password:</label>
+            <input
+              required
+              type="text"
+              class="form-input"
+              id="confirm-password"
+              placeholder="Confirm Password"
+            />
+          </div>
+        </div>
+        <div class="form-end">
+          <div class="errorMessage"></div>
+          <button class="btn" type="submit">Create Account</button>
+          <h1>Already have an account? <a href="" class="login">Log in</a></h1>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="main.js"></script>
 </html>
